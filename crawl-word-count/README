@@ -1,0 +1,12 @@
+用法
+===
+
+最简单的运行方式是：
+1. 把脚本crawl_and_word_count.py, run.sh 和测试数据文件test_urls从github上pull或者wget下来，并放到同一个文件夹下
+2. 在终端运行命令
+    chmod a+x run.sh
+3. 在终端运行命令
+    ./run.sh
+4. 你将会在程序得运行状况， 运行完毕，你可以运行
+    ls output
+   这将会输出所有的结果文件
