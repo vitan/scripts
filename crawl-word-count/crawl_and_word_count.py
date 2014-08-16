@@ -55,7 +55,7 @@ class CrawlCount(threading.Thread):
                 
                 # TODO
                 # 1. how to avoid duplicated filename caused by duplicated url
-                # 2. As linux can't accept '/' as filename, hash the url to solve it
+                # 2. Since linux can't accept '/' as filename, hash the url to solve it
                 filename = hashlib.sha256(url).hexdigest()
                 with open(os.path.join(self.target, filename), 'w') as outf:
                     outf.write('\n'.join(compose))
